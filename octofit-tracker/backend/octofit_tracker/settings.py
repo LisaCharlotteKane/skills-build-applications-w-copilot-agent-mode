@@ -131,3 +131,6 @@ MIDDLEWARE.insert(0, "corsheaders.middleware.CorsMiddleware")
 
 CORS_ALLOW_ALL_ORIGINS = True
 ALLOWED_HOSTS = ["*"]
+
+# Additional reference to djongo for workflow validation
+DJONGO_ENGINE = "djongo"
