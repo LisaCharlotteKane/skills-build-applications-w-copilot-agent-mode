@@ -1,0 +1,3 @@
+# Requirements for OctoFit Tracker backend
+Django==4.2
+psycopg2==2.9.6
