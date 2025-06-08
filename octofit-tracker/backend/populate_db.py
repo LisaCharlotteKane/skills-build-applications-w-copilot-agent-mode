@@ -43,4 +43,5 @@ db.activity.insert_many(activity)
 db.leaderboard.insert_many(leaderboard)
 db.workouts.insert_many(workouts)
 
-print("Database populated with sample data.")
+# Adding test data for users, teams, activity, leaderboard, and workouts
+print("Test data for users, teams, activity, leaderboard, and workouts added.")
