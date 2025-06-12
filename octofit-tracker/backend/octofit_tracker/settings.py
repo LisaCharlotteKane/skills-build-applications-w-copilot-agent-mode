@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-qs0tovp!wv@!$3^&s1*@1-s#tlh%-$%!i45!5()0@_k7bd31!+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['glowing-lamp-qjjwp5x5r5wcxqpr-8000.app.github.dev', 'localhost']
 
 # Application definition
 INSTALLED_APPS = [
