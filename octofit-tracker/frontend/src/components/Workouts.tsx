@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://glowing-lamp-qjjwp5x5r5wcxqpr-8000.app.github.dev/api/workouts')
+    fetch('https://glowing-lamp-qjjwp5x5r5wcxqpr-8000.app.github.dev/api/workouts?format=api')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);

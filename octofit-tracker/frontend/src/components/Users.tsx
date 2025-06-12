@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://glowing-lamp-qjjwp5x5r5wcxqpr-8000.app.github.dev/api/users')
+    fetch('https://glowing-lamp-qjjwp5x5r5wcxqpr-8000.app.github.dev/api/users?format=api')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);
