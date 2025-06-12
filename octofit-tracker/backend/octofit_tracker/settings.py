@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-qs0tovp!wv@!$3^&s1*@1-s#tlh%-$%!i45!5()0@_k7bd31!+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "fitness",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -123,14 +125,4 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-INSTALLED_APPS += [
-    "corsheaders",
-]
-
-MIDDLEWARE.insert(0, "corsheaders.middleware.CorsMiddleware")
-
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ["*"]
-
-# Additional reference to djongo for workflow validation
-DJONGO_ENGINE = "djongo"
