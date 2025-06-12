@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "Launch Django Backend",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
       "args": ["runserver", "0.0.0.0:8000"],
@@ -23,8 +23,7 @@
       "program": "${workspaceFolder}/octofit-tracker/frontend/node_modules/react-scripts/scripts/start.js",
       "cwd": "${workspaceFolder}/octofit-tracker/frontend",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["start"],
-      "port": 3000
+      "runtimeArgs": ["start"]
     }
   ]
 }
